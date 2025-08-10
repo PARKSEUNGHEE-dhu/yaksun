@@ -82,6 +82,10 @@
     .cta-band .btn-lg{background:#fff; color:var(--pri); border-color:#fff}
     .cta-band .btn-lg:hover{background:#eef6ff}
 
+    /* SNS 링크(작게 표시) */
+    .sns{font-size:12px; color:#2563eb; margin-left:6px}
+    .sns::before{content:""; font-family: Arial, Helvetica, sans-serif; margin-right:4px}
+
     footer{border-top:1px solid #e5e7eb; background:#fff; color:#637083}
     footer .wrap{padding:28px 16px}
     .small{font-size:13px; color:#8a94a6}
@@ -94,10 +98,12 @@
   </style>
 </head>
 <body>
+  <!-- NAV -->
   <header class="nav">
     <div class="wrap">
       <div class="brand"><span class="dot"></span> DHU 약선푸드테크비즈니스학과</div>
       <ul>
+        <!-- 요구한 순서 및 연결(교육과정은 새 위치 #curriculum로 이동) -->
         <li><a class="btn" href="#intro">학과소개</a></li>
         <li><a class="btn" href="#career">진로/자격</a></li>
         <li><a class="btn" href="#faculty">지도교수</a></li>
@@ -108,12 +114,15 @@
     </div>
   </header>
 
+  <!-- 1PAGE: HERO -->
   <section class="hero" id="top">
     <div class="wrap">
       <div>
         <div class="tag">성인학습자 전형학과</div>
         <h1>약선 × 푸드테크 × 비즈니스 융합 인재 양성</h1>
-        <p class="lead">아래 핵심을 바탕으로 <strong>K-약선푸드</strong> 산업을 선도할 창의융합인재를 양성합니다.</p>
+        <p class="lead">
+          아래 핵심을 바탕으로 <strong>K-약선푸드</strong> 산업을 선도할 창의융합인재를 양성합니다.
+        </p>
         <ul class="bullet">
           <li>주말반 운영과 온라인 교육 시스템</li>
           <li>약선 메뉴 개발, R&amp;D, 마케팅까지</li>
@@ -121,8 +130,16 @@
         </ul>
 
         <div class="cta-row" style="margin-top:14px">
-          <a class="btn-lg btn-primary" href="https://docs.google.com/forms/d/1hIWckoXwl-1LILJtSW4C8t7RViwaX3oYyrSCtGnGcRY/edit" target="_blank" rel="noopener">입학관련 문의하기</a>
-          <a class="btn-lg btn-ghost" href="https://www.dhu.ac.kr/HOME/Yaksun/index.htm" target="_blank" rel="noopener">학과 공식 홈페이지</a>
+          <a class="btn-lg btn-primary" href="https://docs.google.com/forms/d/1hIWckoXwl-1LILJtSW4C8t7RViwaX3oYyrSCtGnGcRY/edit" target="_blank" rel="noopener">
+            입학관련 문의하기
+          </a>
+          <a class="btn-lg btn-ghost" href="https://www.dhu.ac.kr/HOME/Yaksun/index.htm" target="_blank" rel="noopener">
+            학과 공식 홈페이지
+          </a>
+          <!-- ◆ 추가: 학과 페이스북 둘러보기 -->
+          <a class="btn-lg btn-ghost" href="https://www.facebook.com/groups/859042881634022/?ref=share&mibextid=NSMWBT" target="_blank" rel="noopener" title="학과 페이스북 둘러보기">
+            학과 페이스북 둘러보기
+          </a>
         </div>
 
         <div style="margin-top:10px; color:#334155">
@@ -145,12 +162,16 @@
     </div>
   </section>
 
+  <!-- 2PAGE: INTRO + 장점/자격/비전진로 -->
   <section id="intro">
     <div class="wrap">
       <div class="grid grid-2">
         <div class="card">
           <h2>학과소개</h2>
-          <p class="desc">약선학·푸드테크·디지털마케팅을 융합한 교육과정으로 한의학적 원리와 약선실제, 간편식(HMR)·케어푸드 개발, 디지털 커머스·브랜딩까지 실무 역량을 기릅니다.</p>
+          <p class="desc">
+            약선학·푸드테크·디지털마케팅을 융합한 교육과정으로 한의학적 원리와 약선실제,
+            간편식(HMR)·케어푸드 개발, 디지털 커머스·브랜딩까지 실무 역량을 기릅니다.
+          </p>
           <h3 style="margin-top:10px">약선푸드테크비즈니스학과의 장점</h3>
           <ul class="list">
             <li>한방과 식품, 테크놀로지와 비즈니스를 넘나드는 <b>초융합 교육시스템</b></li>
@@ -161,7 +182,10 @@
           </ul>
 
           <h3 style="margin-top:14px">관련 자격증</h3>
-          <p class="desc" style="margin-bottom:6px">약선사, 약선설계사 1·2급, 채식요리지도사, 약선상품지도사, 건강약선조리사, 디지털마케팅전문가, 약선간편식전문가, 약선음료전문가, 꽃차소믈리에, 아동요리지도사 등</p>
+          <p class="desc" style="margin-bottom:6px">
+            약선사, 약선설계사 1·2급, 채식요리지도사, 약선상품지도사, 건강약선조리사,
+            디지털마케팅전문가, 약선간편식전문가, 약선음료전문가, 꽃차소믈리에, 아동요리지도사 등
+          </p>
 
           <h3 style="margin-top:14px" id="career">비전 및 진로</h3>
           <div class="grid grid-2">
@@ -199,6 +223,7 @@
     </div>
   </section>
 
+  <!-- 3PAGE: 산학/연구 + (아래) 교육과정(왼쪽) + (그 아래) 교수 표 -->
   <section id="research">
     <div class="wrap">
       <h2>산학협력·기술이전 및 연구 실적</h2>
@@ -220,33 +245,37 @@
         </div>
       </div>
 
-      <div class="grid grid-2" style="align-items:start; margin-top:36px">
-        <div class="card" style="margin-bottom:8px">
-          <h2 id="curriculum" style="margin-top:0">교육과정</h2>
+      <!-- 교육과정: 이미지 오른쪽 / 텍스트 왼쪽 (2열) -->
+      <h2 id="curriculum" style="margin-top:36px">교육과정</h2>
+      <div class="grid grid-2" style="align-items:start">
+        <!-- 왼쪽 텍스트 -->
+        <div class="card">
           <details open>
             <summary>약선교과</summary>
             <div style="margin-top:10px">약선기초이론, 식이·생약소학, 식치약선, 약선디저트실습, 발효/절기약선, 약선설계론, 한방식품개발 등</div>
           </details>
-          <details open>
+          <details>
             <summary>푸드테크</summary>
             <div style="margin-top:10px">HMR 제조실무, 스마트푸드 파일럿, 식품가공·위생, 기능성식품개발, 데이터 기반 R&amp;D 실습 등</div>
           </details>
-          <details open>
+          <details>
             <summary>푸드비즈니스 &amp; 디지털 마케팅</summary>
             <div style="margin-top:10px">푸드브랜딩·상품화, 디지털커머스·SNS 실무, 라이브커머스, 식품유통·마케팅 전략, 창업 실습 등</div>
           </details>
-          <details open>
+          <details>
             <summary>창업·현장 실습</summary>
             <div style="margin-top:10px">캡스톤디자인, 산학연계 프로젝트, 기업인턴십, 현장 멘토링/컨설팅, 경진대회·전시 참가</div>
           </details>
         </div>
+        <!-- 오른쪽 이미지 -->
         <div class="img-wrap">
           <a href="KakaoTalk_20250725_071313867_03.png" target="_blank" title="클릭하여 크게 보기">
-            <img src="KakaoTalk_20250725_071313867_03.png" alt="팜플렛 3페이지 이미지"/>
+            <img src="KakaoTalk_20250725_071313867_03.png" alt="교육과정 관련 팜플렛 이미지"/>
           </a>
         </div>
       </div>
 
+      <!-- ▼▼ 아래쪽: 학과 교수 표(요청 포맷) + 페이스북 링크 ▼▼ -->
       <h2 id="faculty" style="margin-top:32px">학과 교수진</h2>
       <div class="card">
         <table>
@@ -260,38 +289,53 @@
           </thead>
           <tbody>
             <tr>
-              <td>박순애</td>
+              <td>
+                박순애
+                <a class="sns" href="https://www.facebook.com/share/165YABrZhw/" target="_blank" rel="noopener" title="박순애 교수 페이스북">Facebook</a>
+              </td>
               <td>이학박사, 학의학 박사수료, 한방식품, 약선조리외식</td>
               <td>약선메뉴개발, 간편식상품화</td>
-              <td>010-8034-2262</td>
+              <td><a href="tel:01080342262">010-8034-2262</a></td>
             </tr>
             <tr>
-              <td>박승희</td>
+              <td>
+                박승희
+                <a class="sns" href="https://www.facebook.com/share/14FbZLsjtZJ/" target="_blank" rel="noopener" title="박승희 교수 페이스북">Facebook</a>
+              </td>
               <td>디지털융합비즈니스학박사</td>
               <td>디지털마케팅, AI, 푸드커머스</td>
-              <td>010-9323-1228</td>
+              <td><a href="tel:01093231228">010-9323-1228</a></td>
             </tr>
             <tr>
-              <td>박해진</td>
+              <td>
+                박해진
+                <!-- 페이스북 링크 없음 (요청사항) -->
+              </td>
               <td>이학박사, 기능성식품, 식품영양</td>
               <td>한방기능성식품, 약선영양학</td>
-              <td>010-2522-8483</td>
+              <td><a href="tel:01025228483">010-2522-8483</a></td>
             </tr>
             <tr>
-              <td>김미림</td>
+              <td>
+                김미림
+                <a class="sns" href="https://www.facebook.com/share/1ZB2zYZgZn/" target="_blank" rel="noopener" title="김미림 교수 페이스북">Facebook</a>
+              </td>
               <td>이학박사, 중의학사, 약선학, 발표식품학</td>
               <td>식치약선학, 식이본초학, 약선설계이론</td>
-              <td>010-3609-9080</td>
+              <td><a href="tel:01036099080">010-3609-9080</a></td>
             </tr>
           </tbody>
         </table>
       </div>
+      <!-- ▲▲ 교수 표 끝 ▲▲ -->
     </div>
   </section>
 
+  <!-- 4PAGE: 왼쪽 이유 / 오른쪽 이미지 (교육과정은 3페이지로 이동되어 삭제됨) -->
   <section id="program" style="background:#fff">
     <div class="wrap">
       <div class="grid grid-2">
+        <!-- 왼쪽: 입학해야 하는 이유 -->
         <div>
           <h2>약선푸드테크비즈니스학과에 입학해야 하는 이유</h2>
           <ol class="list">
@@ -323,6 +367,7 @@
           </div>
         </div>
 
+        <!-- 오른쪽: 팜플렛 이미지 -->
         <div class="img-wrap">
           <a href="KakaoTalk_20250725_071313867_03.png" target="_blank" title="클릭하여 크게 보기">
             <img src="KakaoTalk_20250725_071313867_03.png" alt="팜플렛 4페이지 이미지"/>
@@ -339,6 +384,7 @@
     </div>
   </footer>
 
+  <!-- 이미지 프리로드(선택) -->
   <div style="display:none">
     <link rel="preload" as="image" href="KakaoTalk_20250725_071313867.png">
   </div>
